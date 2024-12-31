@@ -1,0 +1,16 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.app{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.layout_container{
+    width: 100%;
+   
+    /* border: solid; */
+}

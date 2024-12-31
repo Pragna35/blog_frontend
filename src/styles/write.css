@@ -1,0 +1,65 @@
+.write_div{
+    margin: 3% 5%;
+    display: flex;
+    gap: 20px;
+}
+.write_content{
+    flex: 5;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.write_content input{
+    padding: 10px;
+    border: 1px solid lightgray;
+}
+.editor_Container{
+    height: 300px;
+    overflow: hidden;
+    border: 1px solid lightgray;
+    margin-bottom: 50px;
+}
+.editor{
+    height: 100%;
+    border: none;
+    
+}
+.write_menu{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.w_item{
+
+    flex: 1;
+    padding: 10px;
+    border: 1px solid lightgray;
+     display: flex;
+   flex-direction: column;
+    justify-content: space-between;
+  
+    font-size: .9rem;
+}
+.w_item span{
+    text-align: left;
+}
+.btns{
+    display: flex;
+    justify-content: space-between;
+   
+}
+.cate{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: teal;
+}
+.btns button{
+    cursor: pointer;
+    color: white;
+    background-color: teal;
+    padding: 5px 6px;
+    border: 1px solid lightgray;
+    /* border-radius:5px ; */
+}
