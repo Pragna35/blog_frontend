@@ -1,5 +1,4 @@
 import "../styles/navbar.css";
-import blog_logo from "../assets/blog-logo.jpg";
 import { Link, useNavigate } from "react-router-dom";
 import { useContext, useState } from "react";
 import { AuthContext } from "../../context/authContext";

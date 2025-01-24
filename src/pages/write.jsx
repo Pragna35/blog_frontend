@@ -28,7 +28,7 @@ const WritePage = () => {
       formData.append("file", file);
 
       const res = await axios.post(
-        "http://localhost:3000/api/upload",
+        "https://blog-backend-icsf.onrender.com/api/upload",
         formData
       );
       return res.data; //img url
@@ -49,7 +49,7 @@ const WritePage = () => {
     try {
       state
         ? await axios.patch(
-            `http://localhost:3000/api/posts/${state.id}`,
+            `https://blog-backend-icsf.onrender.com/api/posts/${state.id}`,
             {
               title,
               desc: value,
@@ -63,7 +63,7 @@ const WritePage = () => {
             }
           )
         : await axios.post(
-            `http://localhost:3000/api/posts`,
+            `https://blog-backend-icsf.onrender.com/api/posts`,
             {
               title,
               desc: value,

@@ -10,7 +10,7 @@ const AuthContextProvider = ({ children }) => {
 
   const login = async (inputs) => {
     const res = await axios.post(
-      "http://localhost:3000/api/auth/login",
+      "https://blog-backend-icsf.onrender.com/api/auth/login",
       inputs
     );
     // console.log(res);
@@ -21,7 +21,9 @@ const AuthContextProvider = ({ children }) => {
   };
 
   const logout = async () => {
-    const res = await axios.post("http://localhost:3000/api/auth/logout");
+    const res = await axios.post(
+      "https://blog-backend-icsf.onrender.com/api/auth/logout"
+    );
     localStorage.removeItem("access-token");
     localStorage.removeItem("user");
     setCurrentUser(null);

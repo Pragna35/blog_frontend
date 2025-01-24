@@ -22,7 +22,7 @@ const SinglePage = () => {
     const fetchPost = async () => {
       try {
         const res = await axios.get(
-          `http://localhost:3000/api/posts/${postId}`
+          `https://blog-backend-icsf.onrender.com/api/posts/${postId}`
         );
         // console.log(res);
         setPost(res.data);
@@ -39,9 +39,12 @@ const SinglePage = () => {
 
   const handleDelete = async () => {
     try {
-      await axios.delete(`http://localhost:3000/api/posts/${postId}`, {
-        headers,
-      });
+      await axios.delete(
+        `https://blog-backend-icsf.onrender.com/api/posts/${postId}`,
+        {
+          headers,
+        }
+      );
 
       navigate("/");
     } catch (err) {
