@@ -8,6 +8,7 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+    /* border: 1px solid lightgray; */
 }
 .write_content input{
     padding: 10px;
@@ -16,13 +17,13 @@
 .editor_Container{
     height: 300px;
     overflow: hidden;
-    border: 1px solid lightgray;
+    /* border: 1px solid lightgray; */
     margin-bottom: 50px;
 }
 .editor{
-    height: 100%;
-    border: none;
-    
+    height: 100%;   
+    border: 1px solid lightgray;
+
 }
 .write_menu{
     flex: 2;
@@ -38,16 +39,18 @@
      display: flex;
    flex-direction: column;
     justify-content: space-between;
-  
     font-size: .9rem;
 }
 .w_item span{
     text-align: left;
 }
+.img_label{
+    color: darkblue;
+    font-weight: bold;
+}
 .btns{
     display: flex;
-    justify-content: space-between;
-   
+    justify-content: space-between;   
 }
 .cate{
     display: flex;
@@ -62,4 +65,15 @@
     padding: 5px 6px;
     border: 1px solid lightgray;
     /* border-radius:5px ; */
+}
+
+
+@media screen and (max-width:768px){
+    .write_div{
+        margin: 0% 5%;
+     flex-direction: column;     
+    }
+    .w_item{
+        gap: 10px;
+    }
 }

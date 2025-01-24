@@ -21,6 +21,8 @@ const HomePage = () => {
     };
     fetchPosts();
   }, [cat]);
+
+
   // const posts = [
   //   {
   //     id: "1",
@@ -57,6 +59,7 @@ const HomePage = () => {
   //   },
   // ];
 
+  
   //converting html tag to text
   const getText = (html) => {
     const doc = new DOMParser().parseFromString(html, "text/html");

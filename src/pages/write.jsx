@@ -120,7 +120,9 @@ const WritePage = () => {
               setFile(e.target.files[0]);
             }}
           />
-          <label htmlFor="file">Upload image</label>
+          <label htmlFor="file" className="img_label">
+            Upload image
+          </label>
 
           <div className="btns">
             <button>Save as a draft</button>
