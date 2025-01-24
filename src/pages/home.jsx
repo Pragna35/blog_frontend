@@ -14,7 +14,6 @@ const HomePage = () => {
         const res = await axios.get(
           `https://blog-backend-icsf.onrender.com/api/posts/${cat}`
         );
-
         // console.log(res);
         setPosts(res.data);
       } catch (err) {
