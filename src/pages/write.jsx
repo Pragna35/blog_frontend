@@ -31,8 +31,8 @@ const WritePage = () => {
         "https://blog-backend-icsf.onrender.com/api/upload",
         formData
       );
-      return res.data; //img url
-      //console.log(res.data);
+      // return res.data; //img url
+      console.log(res.data, "resss");
     } catch (err) {
       console.log(err);
     }
